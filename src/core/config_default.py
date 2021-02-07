@@ -37,7 +37,7 @@ class DefaultConfig(object):
     note = ''
 
     # Data sources
-    datasrc_eve = '/path/to/eve/dataset'
+    datasrc_eve = 'src/dataset'
 
     # Data loading
     video_decoder_codec = 'libx264'  # libx264 | nvdec
@@ -57,8 +57,8 @@ class DefaultConfig(object):
     test_stimuli = ['image', 'video', 'wikipedia']
 
     # Inference
-    input_path = ''
-    output_path = ''
+    input_path = 'src/intputs'
+    output_path = 'src/outputs'
 
     # Training
     skip_training = False
@@ -144,11 +144,11 @@ class DefaultConfig(object):
     # Checkpoints management
     checkpoints_save_every_n_steps = 100
     checkpoints_keep_n = 3
-    resume_from = ''
+    resume_from = 'src/outputs'
 
     # Google Sheets related
-    gsheet_secrets_json_file = ''
-    gsheet_workbook_key = ''
+    gsheet_secrets_json_file = 'src/configs/My First Project-8eaaa296b969.json'
+    gsheet_workbook_key = '1niCdH6gaugIlkmE2adAnLy3r15mMFGfvfj5T7fSpo2g'
 
     # Below lie necessary methods for working configuration tracking
 

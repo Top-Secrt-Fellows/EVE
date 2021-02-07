@@ -26,9 +26,9 @@ import ffmpeg
 import numpy as np
 import torch
 
-from core.config_default import DefaultConfig
-import core.inference as inference
-from models.eve import EVE
+from .core.config_default import DefaultConfig
+import src.core.inference as inference
+from .models.eve import EVE
 
 # Default singleton config object
 config = DefaultConfig()

@@ -24,9 +24,9 @@ import torch
 from torch.nn import functional as F
 import torchvision.utils as vutils
 
-import core.training as training
-from datasources import EVESequences_train, EVESequences_val
-from models.eve import EVE
+import src.core.training as training
+from .datasources import EVESequences_train, EVESequences_val
+from .models.eve import EVE
 
 logger = logging.getLogger(__name__)
 config, device = training.script_init_common()
